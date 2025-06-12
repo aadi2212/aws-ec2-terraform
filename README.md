@@ -1,24 +1,26 @@
-# AWS EC2 Terraform Project
+# AWS EC2 with Terraform
 
-## 🚀 Project Overview
-This project provisions a basic AWS infrastructure using Terraform. It includes:
-- A custom VPC
-- A subnet
-- A security group allowing SSH
-- An EC2 instance (Amazon Linux 2)
+This project automates the provisioning of an EC2 instance on AWS using Terraform. It includes:
 
-## 📁 Files
-- `main.tf`: Defines the infrastructure
-- `variables.tf`: Variables used in the project
-- `provider.tf`: AWS provider configuration
-- `outputs.tf`: Displays useful output like instance IP
+- Custom VPC
+- Subnet
+- Internet Gateway
+- Route Table
+- Security Group (with SSH & HTTP access)
+- EC2 Instance (Ubuntu)
 
-## 🧪 How to Run
-1. `terraform init`
-2. `terraform plan`
-3. `terraform apply`
+## Prerequisites
 
----
+- AWS CLI configured
+- Terraform installed
 
-✅ Created by [Aaditya Ranadive]
+## How to Use
+
+1. Clone this repo
+2. Update variables in `variables.tf`
+3. Run `terraform init`, `terraform plan`, `terraform apply`
+
+## Author
+
+Aadi – AWS Certified Solutions Architect Associate
 
